@@ -541,3 +541,22 @@ lm.test <- lm(vis ~ aq)
 lm.test
 abline(-0.8088, 2.2362, col='red')
 ?abline
+
+?install.packages
+
+installed.packages()
+
+available.packages()[1:20]
+
+# http://cran.r-project.org/web/packages/gdata/vignettes/unknown.pdf
+#install.packages('gdata')
+# http://cran.r-project.org/web/packages/zoo/zoo.pdf
+# install.packages('zoo')
+
+?library
+?require
+
+require('gdata')
+require('zoo')
+isUnknown()
+
