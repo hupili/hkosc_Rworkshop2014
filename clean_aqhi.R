@@ -32,3 +32,10 @@ head(AQHIraw, 30)
 save(AQHIraw, file='aqhi-cleaned.rda')
 saveRDS(AQHIraw, file='aqhi-cleaned.rds')
 
+a <- readRDS('aqhi-cleaned.rds')
+
+aqhi <- readRDS('aqhi-cleaned.rds')
+aqhi$hourlyAQHI <- apply(aqhi[,3:17], 1, mean, na.rm=TRUE)
+require(plyr)
+dailyaqhi <- ddply(aqhi, .(Date), summarize, meanAQHI = mean(hourlyAQHI), medianAQHI = median(hourlyAQHI))
+dailyaqhi
