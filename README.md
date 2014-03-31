@@ -1,3 +1,20 @@
+Exercise snippets following HKOSC14's R workshop
+
+   * `problemset.R`:
+   problem set with my scratch solutions.
+   * `clean_aqhi.R`:
+   Data cleansing snippets.
+   Notably the way to handle missing dates;
+   1) `unknownToNA` from `qdata` package;
+   2) `na.locf` from `zoo` package.
+   * `aqhi-cleaned.rds`, `aqhi-cleaned.rda`:
+   The dump of cleaned aqhi data.
+   * `Try-IPython-R.ipynb`:
+   Try R magic in IPython notebook.
+   [online viewer](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/hupili/hkosc_Rworkshop2014/exercise/Try-IPython-R.ipynb?create=1)
+
+---------------------
+
 # Hong Kong Open Source Conference 2014 - Learn R through Public Data Hacking: Introduction to Practical Data Science
 
 ## Who this workshop is for
